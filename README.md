@@ -13,6 +13,11 @@ A Streamlit data-visualization project that explores country-level GDP trends us
 
 The included dataset is based on World Bank GDP data and currently covers 1960–2022. The available years and countries depend on the records in the CSV file; some observations may be missing. This is a historical-data demonstration, not a live GDP feed.
 
+
+## Known Data Limitation
+
+The dataset contains missing country-year observations. The current summary-metric code assumes a selected country has a value at both selected year boundaries; choosing a country or year with a missing value may cause the summary section to fail. The chart and summary should therefore be treated as a learning demonstration until missing-value handling is added.
+
 ## Technology
 
 - Python
